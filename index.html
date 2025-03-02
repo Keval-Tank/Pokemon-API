@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon API</title>
+    <link rel="stylesheet" href="poke.css">
+    <link rel="shortcut icon" href="./imgs/poke.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="megacontainer" id="mgc">
+        <div class="nav" id="nav1" style="display: none;">
+            <img src="./imgs/poke.jpeg" alt="" id="poi">
+        </div>
+        <div class="container">
+            <div class="c1">
+                <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
+                <button id="btn">Fetch Pokemon</button><br>
+                <div class="c2">
+                    <div class="c3">
+                        <div class="left" id="left" style="display: none;">
+                            <img src="" alt="pokemonSprite" style="display: none;" id="pi">
+                        </div>
+                        <div class="right" id="right" style="display: none;">
+                            <div class="info">
+                                <div id="nametag">
+                                    <h2 style="display: none;" id="dname">name</h2><br>
+                                    <div id="ht" style="display: flex;">
+                                        <p>Height: </p>
+                                        <p id="ht1"></p>
+                                    </div>
+                                    <div id="wt" style="display: flex;">
+                                        <p>Weight: </p>
+                                        <p id="wt1"></p>
+                                    </div>
+                                    <div id="bx" style="display: flex;">
+                                        <p>CP: </p>
+                                        <p id="bx1"></p>
+                                    </div>
+                                </div>
+                                <div id="infotag">
+                                    <h3 style="display: none;" id="type">Type</h3>
+                                    <div id="typeimg">
+                                        <img src="" alt="" id="ti1" style="display: none;">
+                                        <img src="" alt="" id="ti2" style="display: none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ablts" style="display: none;">
+            <h2>Abilities</h2>
+            <ul id="ablts"></ul>
+
+        </div>
+    </div>
+    <script src="poke.js"></script>
+    <script src="typelist.js"></script>
+</body>
+
+</html>
